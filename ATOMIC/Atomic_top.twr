@@ -1,0 +1,138 @@
+--------------------------------------------------------------------------------
+Release 12.2 Trace  (nt64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\12.2\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml Atomic_top.twx Atomic_top.ncd -o Atomic_top.twr
+Atomic_top.pcf
+
+Design file:              Atomic_top.ncd
+Physical constraint file: Atomic_top.pcf
+Device,package,speed:     xc3s200a,vq100,-5 (PRODUCTION 1.41 2010-06-22)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk_25MHz
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+ERSTn       |    5.142(R)|    0.016(R)|clk_14M38         |   0.000|
+            |    3.489(R)|    3.570(R)|cpu_Clk           |   0.000|
+RamD<0>     |    4.414(R)|    3.215(R)|cpu_Clk           |   0.000|
+RamD<1>     |    4.675(R)|    3.379(R)|cpu_Clk           |   0.000|
+RamD<2>     |    3.698(R)|    3.329(R)|cpu_Clk           |   0.000|
+RamD<3>     |    3.363(R)|    3.576(R)|cpu_Clk           |   0.000|
+RamD<4>     |    2.580(R)|    3.811(R)|cpu_Clk           |   0.000|
+RamD<5>     |    3.871(R)|    3.463(R)|cpu_Clk           |   0.000|
+RamD<6>     |    4.430(R)|    2.755(R)|cpu_Clk           |   0.000|
+RamD<7>     |    3.381(R)|    2.961(R)|cpu_Clk           |   0.000|
+SDMISO      |   -2.295(R)|    4.007(R)|cpu_Clk           |   0.000|
+ps2_clk     |   -1.463(R)|    3.328(R)|cpu_Clk           |   0.000|
+ps2_data    |   -2.294(R)|    3.999(R)|cpu_Clk           |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock clk_25MHz to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+CE1         |   14.333(R)|cpu_Clk           |   0.000|
+RAMOEn      |   14.720(R)|cpu_Clk           |   0.000|
+RAMWRn      |   12.578(R)|cpu_Clk           |   0.000|
+RamA<0>     |   17.871(R)|cpu_Clk           |   0.000|
+RamA<1>     |   17.854(R)|cpu_Clk           |   0.000|
+RamA<2>     |   17.949(R)|cpu_Clk           |   0.000|
+RamA<3>     |   17.982(R)|cpu_Clk           |   0.000|
+RamA<4>     |   17.802(R)|cpu_Clk           |   0.000|
+RamA<5>     |   18.314(R)|cpu_Clk           |   0.000|
+RamA<6>     |   18.533(R)|cpu_Clk           |   0.000|
+RamA<7>     |   18.709(R)|cpu_Clk           |   0.000|
+RamA<8>     |   16.350(R)|cpu_Clk           |   0.000|
+RamA<9>     |   15.427(R)|cpu_Clk           |   0.000|
+RamA<10>    |   14.070(R)|cpu_Clk           |   0.000|
+RamA<11>    |   13.503(R)|cpu_Clk           |   0.000|
+RamA<12>    |   14.083(R)|cpu_Clk           |   0.000|
+RamA<13>    |   13.954(R)|cpu_Clk           |   0.000|
+RamA<14>    |   14.043(R)|cpu_Clk           |   0.000|
+RamD<0>     |   15.606(R)|cpu_Clk           |   0.000|
+RamD<1>     |   15.653(R)|cpu_Clk           |   0.000|
+RamD<2>     |   16.506(R)|cpu_Clk           |   0.000|
+RamD<3>     |   16.456(R)|cpu_Clk           |   0.000|
+RamD<4>     |   16.403(R)|cpu_Clk           |   0.000|
+RamD<5>     |   15.455(R)|cpu_Clk           |   0.000|
+RamD<6>     |   16.259(R)|cpu_Clk           |   0.000|
+RamD<7>     |   14.279(R)|cpu_Clk           |   0.000|
+RamD<8>     |   16.561(R)|cpu_Clk           |   0.000|
+RamD<9>     |   16.383(R)|cpu_Clk           |   0.000|
+RamD<10>    |   15.781(R)|cpu_Clk           |   0.000|
+RamD<11>    |   15.500(R)|cpu_Clk           |   0.000|
+RamD<12>    |   15.670(R)|cpu_Clk           |   0.000|
+RamD<13>    |   14.509(R)|cpu_Clk           |   0.000|
+RamD<14>    |   15.055(R)|cpu_Clk           |   0.000|
+RamD<15>    |   14.292(R)|cpu_Clk           |   0.000|
+SDCLK       |   12.576(R)|cpu_Clk           |   0.000|
+SDMOSI      |   12.625(R)|cpu_Clk           |   0.000|
+SDSS        |   11.947(R)|cpu_Clk           |   0.000|
+audioR      |   12.671(R)|cpu_Clk           |   0.000|
+audiol      |   12.448(R)|cpu_Clk           |   0.000|
+blue<0>     |    9.395(R)|clk_14M38         |   0.000|
+blue<1>     |    8.916(R)|clk_14M38         |   0.000|
+blue<2>     |    8.881(R)|clk_14M38         |   0.000|
+green<0>    |    9.268(R)|clk_14M38         |   0.000|
+green<1>    |    9.715(R)|clk_14M38         |   0.000|
+green<2>    |    9.495(R)|clk_14M38         |   0.000|
+hsync       |    9.068(R)|clk_14M38         |   0.000|
+red<0>      |    9.467(R)|clk_14M38         |   0.000|
+red<1>      |    9.920(R)|clk_14M38         |   0.000|
+red<2>      |   10.811(R)|clk_14M38         |   0.000|
+vsync       |    8.736(R)|clk_14M38         |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk_25MHz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_25MHz      |   14.149|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Sat Apr 06 15:45:46 2013 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 195 MB
+
+
+

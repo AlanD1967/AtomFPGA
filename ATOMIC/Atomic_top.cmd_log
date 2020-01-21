@@ -1,0 +1,194 @@
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/Atomic.ucf -p xc3s200a-vq100-5 Atomic_top.ngc Atomic_top.ngd  
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/Atomic.ucf -p xc3s200a-vq100-5 Atomic_top.ngc Atomic_top.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -cm area -ir off -pr off -c 100 -o Atomic_top_map.ncd Atomic_top.ngd Atomic_top.pcf 
+par -w -intstyle ise -ol high -t 1 Atomic_top_map.ncd Atomic_top.ncd Atomic_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Atomic_top.twx Atomic_top.ncd -o Atomic_top.twr Atomic_top.pcf 
+bitgen -intstyle ise -f Atomic_top.ut Atomic_top.ncd 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/Atomic.ucf -p xc3s200a-vq100-5 Atomic_top.ngc Atomic_top.ngd  
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/Atomic.ucf -p xc3s200a-vq100-5 Atomic_top.ngc Atomic_top.ngd  
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/Atomic.ucf -p xc3s200a-vq100-5 Atomic_top.ngc Atomic_top.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -cm area -ir off -pr off -c 100 -o Atomic_top_map.ncd Atomic_top.ngd Atomic_top.pcf 
+par -w -intstyle ise -ol high -t 1 Atomic_top_map.ncd Atomic_top.ncd Atomic_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Atomic_top.twx Atomic_top.ncd -o Atomic_top.twr Atomic_top.pcf 
+bitgen -intstyle ise -f Atomic_top.ut Atomic_top.ncd 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/Atomic.ucf -p xc3s200a-vq100-5 Atomic_top.ngc Atomic_top.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -cm area -ir off -pr off -c 100 -o Atomic_top_map.ncd Atomic_top.ngd Atomic_top.pcf 
+par -w -intstyle ise -ol high -t 1 Atomic_top_map.ncd Atomic_top.ncd Atomic_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Atomic_top.twx Atomic_top.ncd -o Atomic_top.twr Atomic_top.pcf 
+bitgen -intstyle ise -f Atomic_top.ut Atomic_top.ncd 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/Atomic.ucf -p xc3s200a-vq100-5 Atomic_top.ngc Atomic_top.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -cm area -ir off -pr off -c 100 -o Atomic_top_map.ncd Atomic_top.ngd Atomic_top.pcf 
+par -w -intstyle ise -ol high -t 1 Atomic_top_map.ncd Atomic_top.ncd Atomic_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Atomic_top.twx Atomic_top.ncd -o Atomic_top.twr Atomic_top.pcf 
+bitgen -intstyle ise -f Atomic_top.ut Atomic_top.ncd 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/Atomic.ucf -p xc3s200a-vq100-5 Atomic_top.ngc Atomic_top.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -cm area -ir off -pr off -c 100 -o Atomic_top_map.ncd Atomic_top.ngd Atomic_top.pcf 
+par -w -intstyle ise -ol high -t 1 Atomic_top_map.ncd Atomic_top.ncd Atomic_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Atomic_top.twx Atomic_top.ncd -o Atomic_top.twr Atomic_top.pcf 
+bitgen -intstyle ise -f Atomic_top.ut Atomic_top.ncd 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/Atomic.ucf -p xc3s200a-vq100-5 Atomic_top.ngc Atomic_top.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -cm area -ir off -pr off -c 100 -o Atomic_top_map.ncd Atomic_top.ngd Atomic_top.pcf 
+par -w -intstyle ise -ol high -t 1 Atomic_top_map.ncd Atomic_top.ncd Atomic_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Atomic_top.twx Atomic_top.ncd -o Atomic_top.twr Atomic_top.pcf 
+bitgen -intstyle ise -f Atomic_top.ut Atomic_top.ncd 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/Atomic.ucf -p xc3s200a-vq100-5 Atomic_top.ngc Atomic_top.ngd  
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/Atomic.ucf -p xc3s200a-vq100-5 Atomic_top.ngc Atomic_top.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -cm area -ir off -pr off -c 100 -o Atomic_top_map.ncd Atomic_top.ngd Atomic_top.pcf 
+par -w -intstyle ise -ol high -t 1 Atomic_top_map.ncd Atomic_top.ncd Atomic_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Atomic_top.twx Atomic_top.ncd -o Atomic_top.twr Atomic_top.pcf 
+bitgen -intstyle ise -f Atomic_top.ut Atomic_top.ncd 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/Atomic.ucf -p xc3s200a-vq100-5 Atomic_top.ngc Atomic_top.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -cm area -ir off -pr off -c 100 -o Atomic_top_map.ncd Atomic_top.ngd Atomic_top.pcf 
+par -w -intstyle ise -ol high -t 1 Atomic_top_map.ncd Atomic_top.ncd Atomic_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Atomic_top.twx Atomic_top.ncd -o Atomic_top.twr Atomic_top.pcf 
+bitgen -intstyle ise -f Atomic_top.ut Atomic_top.ncd 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/Atomic.ucf -p xc3s200a-vq100-5 Atomic_top.ngc Atomic_top.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -cm area -ir off -pr off -c 100 -o Atomic_top_map.ncd Atomic_top.ngd Atomic_top.pcf 
+par -w -intstyle ise -ol high -t 1 Atomic_top_map.ncd Atomic_top.ncd Atomic_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Atomic_top.twx Atomic_top.ncd -o Atomic_top.twr Atomic_top.pcf 
+bitgen -intstyle ise -f Atomic_top.ut Atomic_top.ncd 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/Atomic.ucf -p xc3s200a-vq100-5 Atomic_top.ngc Atomic_top.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -cm area -ir off -pr off -c 100 -o Atomic_top_map.ncd Atomic_top.ngd Atomic_top.pcf 
+par -w -intstyle ise -ol high -t 1 Atomic_top_map.ncd Atomic_top.ncd Atomic_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Atomic_top.twx Atomic_top.ncd -o Atomic_top.twr Atomic_top.pcf 
+bitgen -intstyle ise -f Atomic_top.ut Atomic_top.ncd 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/Atomic.ucf -p xc3s200a-vq100-5 Atomic_top.ngc Atomic_top.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -cm area -ir off -pr off -c 100 -o Atomic_top_map.ncd Atomic_top.ngd Atomic_top.pcf 
+par -w -intstyle ise -ol high -t 1 Atomic_top_map.ncd Atomic_top.ncd Atomic_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Atomic_top.twx Atomic_top.ncd -o Atomic_top.twr Atomic_top.pcf 
+bitgen -intstyle ise -f Atomic_top.ut Atomic_top.ncd 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/Atomic.ucf -p xc3s200a-vq100-5 Atomic_top.ngc Atomic_top.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -cm area -ir off -pr off -c 100 -o Atomic_top_map.ncd Atomic_top.ngd Atomic_top.pcf 
+par -w -intstyle ise -ol high -t 1 Atomic_top_map.ncd Atomic_top.ncd Atomic_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Atomic_top.twx Atomic_top.ncd -o Atomic_top.twr Atomic_top.pcf 
+bitgen -intstyle ise -f Atomic_top.ut Atomic_top.ncd 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/Atomic.ucf -p xc3s200a-vq100-5 Atomic_top.ngc Atomic_top.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -cm area -ir off -pr off -c 100 -o Atomic_top_map.ncd Atomic_top.ngd Atomic_top.pcf 
+par -w -intstyle ise -ol high -t 1 Atomic_top_map.ncd Atomic_top.ncd Atomic_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Atomic_top.twx Atomic_top.ncd -o Atomic_top.twr Atomic_top.pcf 
+bitgen -intstyle ise -f Atomic_top.ut Atomic_top.ncd 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/Atomic.ucf -p xc3s200a-vq100-5 Atomic_top.ngc Atomic_top.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -cm area -ir off -pr off -c 100 -o Atomic_top_map.ncd Atomic_top.ngd Atomic_top.pcf 
+par -w -intstyle ise -ol high -t 1 Atomic_top_map.ncd Atomic_top.ncd Atomic_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Atomic_top.twx Atomic_top.ncd -o Atomic_top.twr Atomic_top.pcf 
+bitgen -intstyle ise -f Atomic_top.ut Atomic_top.ncd 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/Atomic.ucf -p xc3s200a-vq100-5 Atomic_top.ngc Atomic_top.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -cm area -ir off -pr off -c 100 -o Atomic_top_map.ncd Atomic_top.ngd Atomic_top.pcf 
+par -w -intstyle ise -ol high -t 1 Atomic_top_map.ncd Atomic_top.ncd Atomic_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Atomic_top.twx Atomic_top.ncd -o Atomic_top.twr Atomic_top.pcf 
+bitgen -intstyle ise -f Atomic_top.ut Atomic_top.ncd 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/Atomic.ucf -p xc3s200a-vq100-5 Atomic_top.ngc Atomic_top.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -cm area -ir off -pr off -c 100 -o Atomic_top_map.ncd Atomic_top.ngd Atomic_top.pcf 
+par -w -intstyle ise -ol high -t 1 Atomic_top_map.ncd Atomic_top.ncd Atomic_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Atomic_top.twx Atomic_top.ncd -o Atomic_top.twr Atomic_top.pcf 
+bitgen -intstyle ise -f Atomic_top.ut Atomic_top.ncd 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/Atomic.ucf -p xc3s200a-vq100-5 Atomic_top.ngc Atomic_top.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -cm area -ir off -pr off -c 100 -o Atomic_top_map.ncd Atomic_top.ngd Atomic_top.pcf 
+par -w -intstyle ise -ol high -t 1 Atomic_top_map.ncd Atomic_top.ncd Atomic_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Atomic_top.twx Atomic_top.ncd -o Atomic_top.twr Atomic_top.pcf 
+bitgen -intstyle ise -f Atomic_top.ut Atomic_top.ncd 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/Atomic.ucf -p xc3s200a-vq100-5 Atomic_top.ngc Atomic_top.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -cm area -ir off -pr off -c 100 -o Atomic_top_map.ncd Atomic_top.ngd Atomic_top.pcf 
+par -w -intstyle ise -ol high -t 1 Atomic_top_map.ncd Atomic_top.ncd Atomic_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Atomic_top.twx Atomic_top.ncd -o Atomic_top.twr Atomic_top.pcf 
+bitgen -intstyle ise -f Atomic_top.ut Atomic_top.ncd 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/Atomic.ucf -p xc3s200a-vq100-5 Atomic_top.ngc Atomic_top.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -cm area -ir off -pr off -c 100 -o Atomic_top_map.ncd Atomic_top.ngd Atomic_top.pcf 
+par -w -intstyle ise -ol high -t 1 Atomic_top_map.ncd Atomic_top.ncd Atomic_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Atomic_top.twx Atomic_top.ncd -o Atomic_top.twr Atomic_top.pcf 
+bitgen -intstyle ise -f Atomic_top.ut Atomic_top.ncd 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/Atomic.ucf -p xc3s200a-vq100-5 Atomic_top.ngc Atomic_top.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -cm area -ir off -pr off -c 100 -o Atomic_top_map.ncd Atomic_top.ngd Atomic_top.pcf 
+par -w -intstyle ise -ol high -t 1 Atomic_top_map.ncd Atomic_top.ncd Atomic_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Atomic_top.twx Atomic_top.ncd -o Atomic_top.twr Atomic_top.pcf 
+bitgen -intstyle ise -f Atomic_top.ut Atomic_top.ncd 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/Atomic.ucf -p xc3s200a-vq100-5 Atomic_top.ngc Atomic_top.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -cm area -ir off -pr off -c 100 -o Atomic_top_map.ncd Atomic_top.ngd Atomic_top.pcf 
+par -w -intstyle ise -ol high -t 1 Atomic_top_map.ncd Atomic_top.ncd Atomic_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Atomic_top.twx Atomic_top.ncd -o Atomic_top.twr Atomic_top.pcf 
+bitgen -intstyle ise -f Atomic_top.ut Atomic_top.ncd 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/Atomic.ucf -p xc3s200a-vq100-5 Atomic_top.ngc Atomic_top.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -cm area -ir off -pr off -c 100 -o Atomic_top_map.ncd Atomic_top.ngd Atomic_top.pcf 
+par -w -intstyle ise -ol high -t 1 Atomic_top_map.ncd Atomic_top.ncd Atomic_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Atomic_top.twx Atomic_top.ncd -o Atomic_top.twr Atomic_top.pcf 
+bitgen -intstyle ise -f Atomic_top.ut Atomic_top.ncd 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/Atomic.ucf -p xc3s200a-vq100-5 Atomic_top.ngc Atomic_top.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -cm area -ir off -pr off -c 100 -o Atomic_top_map.ncd Atomic_top.ngd Atomic_top.pcf 
+par -w -intstyle ise -ol high -t 1 Atomic_top_map.ncd Atomic_top.ncd Atomic_top.pcf 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/Atomic.ucf -p xc3s200a-vq100-5 Atomic_top.ngc Atomic_top.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -cm area -ir off -pr off -c 100 -o Atomic_top_map.ncd Atomic_top.ngd Atomic_top.pcf 
+par -w -intstyle ise -ol high -t 1 Atomic_top_map.ncd Atomic_top.ncd Atomic_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Atomic_top.twx Atomic_top.ncd -o Atomic_top.twr Atomic_top.pcf 
+bitgen -intstyle ise -f Atomic_top.ut Atomic_top.ncd 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/Atomic.ucf -p xc3s200a-vq100-5 Atomic_top.ngc Atomic_top.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -cm area -ir off -pr off -c 100 -o Atomic_top_map.ncd Atomic_top.ngd Atomic_top.pcf 
+par -w -intstyle ise -ol high -t 1 Atomic_top_map.ncd Atomic_top.ncd Atomic_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Atomic_top.twx Atomic_top.ncd -o Atomic_top.twr Atomic_top.pcf 
+bitgen -intstyle ise -f Atomic_top.ut Atomic_top.ncd 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/Atomic.ucf -p xc3s200a-vq100-5 Atomic_top.ngc Atomic_top.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -cm area -ir off -pr off -c 100 -o Atomic_top_map.ncd Atomic_top.ngd Atomic_top.pcf 
+par -w -intstyle ise -ol high -t 1 Atomic_top_map.ncd Atomic_top.ncd Atomic_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Atomic_top.twx Atomic_top.ncd -o Atomic_top.twr Atomic_top.pcf 
+bitgen -intstyle ise -f Atomic_top.ut Atomic_top.ncd 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/Atomic.ucf -p xc3s200a-vq100-5 Atomic_top.ngc Atomic_top.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -cm area -ir off -pr off -c 100 -o Atomic_top_map.ncd Atomic_top.ngd Atomic_top.pcf 
+par -w -intstyle ise -ol high -t 1 Atomic_top_map.ncd Atomic_top.ncd Atomic_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Atomic_top.twx Atomic_top.ncd -o Atomic_top.twr Atomic_top.pcf 
+bitgen -intstyle ise -f Atomic_top.ut Atomic_top.ncd 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/Atomic.ucf -p xc3s200a-vq100-5 Atomic_top.ngc Atomic_top.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -cm area -ir off -pr off -c 100 -o Atomic_top_map.ncd Atomic_top.ngd Atomic_top.pcf 
+par -w -intstyle ise -ol high -t 1 Atomic_top_map.ncd Atomic_top.ncd Atomic_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Atomic_top.twx Atomic_top.ncd -o Atomic_top.twr Atomic_top.pcf 
+bitgen -intstyle ise -f Atomic_top.ut Atomic_top.ncd 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/Atomic.ucf -p xc3s200a-vq100-5 Atomic_top.ngc Atomic_top.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -cm area -ir off -pr off -c 100 -o Atomic_top_map.ncd Atomic_top.ngd Atomic_top.pcf 
+par -w -intstyle ise -ol high -t 1 Atomic_top_map.ncd Atomic_top.ncd Atomic_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Atomic_top.twx Atomic_top.ncd -o Atomic_top.twr Atomic_top.pcf 
+bitgen -intstyle ise -f Atomic_top.ut Atomic_top.ncd 
+xst -intstyle ise -ifn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.xst" -ofn "D:/Acorn/Atom/FPGA/subatomic/Atomic_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc src/Atomic.ucf -p xc3s200a-vq100-5 Atomic_top.ngc Atomic_top.ngd  
+map -intstyle ise -p xc3s200a-vq100-5 -cm area -ir off -pr off -c 100 -o Atomic_top_map.ncd Atomic_top.ngd Atomic_top.pcf 
+par -w -intstyle ise -ol high -t 1 Atomic_top_map.ncd Atomic_top.ncd Atomic_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Atomic_top.twx Atomic_top.ncd -o Atomic_top.twr Atomic_top.pcf 
+bitgen -intstyle ise -f Atomic_top.ut Atomic_top.ncd 

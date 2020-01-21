@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Acorn\Atom\FPGA\subatomic\Atomic_top.ncd
+OUTFILE=D:\Acorn\Atom\FPGA\subatomic\Atomic_top.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s200a-5vq100
+WORKINGDIR=D:\Acorn\Atom\FPGA\subatomic
+LICENSE=WebPack
+USER_INFO=0_0_472

@@ -1,0 +1,1521 @@
+Release 12.2 - xst M.63c (nt64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.30 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.30 secs
+ 
+--> Reading design: Atomic_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Atomic_top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Atomic_top"
+Output Format                      : NGC
+Target Device                      : xc3s200a-5-vq100
+
+---- Source Options
+Top Module Name                    : Atomic_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/Acorn/Atom/FPGA/subatomic/src/T6502/T65_Pack.vhd" in Library work.
+Compiling vhdl file "D:/Acorn/Atom/FPGA/subatomic/src/ps2kybrd/ps2_intf.vhd" in Library work.
+Architecture ps2_intf_arch of Entity ps2_intf is up to date.
+Compiling vhdl file "D:/Acorn/Atom/FPGA/subatomic/src/MC6847/mc6847_ntsc.vhd" in Library work.
+Architecture rtl of Entity mc6847_ntsc is up to date.
+Compiling vhdl file "D:/Acorn/Atom/FPGA/subatomic/src/T6502/T65_MCode.vhd" in Library work.
+Architecture rtl of Entity t65_mcode is up to date.
+Compiling vhdl file "D:/Acorn/Atom/FPGA/subatomic/src/T6502/T65_ALU.vhd" in Library work.
+Architecture rtl of Entity t65_alu is up to date.
+Compiling vhdl file "D:/Acorn/Atom/FPGA/subatomic/src/DCM/DCM ATOM.vhd" in Library work.
+Architecture behavioral of Entity dcm1 is up to date.
+Compiling vhdl file "D:/Acorn/Atom/FPGA/subatomic/src/DCM/DCM ATOM2.vhd" in Library work.
+Architecture behavioral of Entity dcm2 is up to date.
+Compiling vhdl file "D:/Acorn/Atom/FPGA/subatomic/src/T6502/T65.vhd" in Library work.
+Architecture rtl of Entity t65 is up to date.
+Compiling vhdl file "D:/Acorn/Atom/FPGA/subatomic/src/MC6847/mc6847.vhd" in Library work.
+Architecture syn of Entity mc6847 is up to date.
+Compiling vhdl file "D:/Acorn/Atom/FPGA/subatomic/src/ROM/SDROM22ROM.vhd" in Library work.
+Architecture rtl of Entity sdrom is up to date.
+Compiling vhdl file "D:/Acorn/Atom/FPGA/subatomic/src/ROM/basic.vhd" in Library work.
+Architecture rtl of Entity atombasic is up to date.
+Compiling vhdl file "D:/Acorn/Atom/FPGA/subatomic/src/ROM/float.vhd" in Library work.
+Architecture rtl of Entity atomfloat is up to date.
+Compiling vhdl file "D:/Acorn/Atom/FPGA/subatomic/src/ROM/kernel.vhd" in Library work.
+Architecture rtl of Entity atomkernal is up to date.
+Compiling vhdl file "D:/Acorn/Atom/FPGA/subatomic/src/RAM/RAM0x8000.vhd" in Library work.
+Architecture behavioral of Entity sram0x8000 is up to date.
+Compiling vhdl file "D:/Acorn/Atom/FPGA/subatomic/src/i82C55/i82c55.vhd" in Library work.
+Architecture rtl of Entity i82c55 is up to date.
+Compiling vhdl file "D:/Acorn/Atom/FPGA/subatomic/src/ps2kybrd/keyboard.vhd" in Library work.
+Architecture rtl of Entity keyboard is up to date.
+Compiling vhdl file "D:/Acorn/Atom/FPGA/subatomic/src/MC6522/m6522.vhd" in Library work.
+WARNING:HDLParsers:1406 - "D:/Acorn/Atom/FPGA/subatomic/src/MC6522/m6522.vhd" Line 167. No sensitivity list and no wait in the process
+Architecture rtl of Entity m6522 is up to date.
+Compiling vhdl file "D:/Acorn/Atom/FPGA/subatomic/src/Atomic_top.vhd" in Library work.
+Architecture behavioral of Entity atomic_top is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Atomic_top> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <dcm1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <dcm2> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <t65> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <mc6847> in library <work> (architecture <syn>) with generics.
+	CVBS_NOT_VGA = false
+	T1_VARIANT = false
+
+Analyzing hierarchy for entity <SDROM> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <atombasic> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <atomfloat> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <atomkernal> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <SRAM0x8000> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <I82C55> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <keyboard> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <M6522> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <T65_MCode> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <T65_ALU> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <mc6847_ntsc> in library <work> (architecture <RTL>).
+
+Analyzing hierarchy for entity <ps2_intf> in library <work> (architecture <ps2_intf_arch>) with generics.
+	filter_length = 8
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Atomic_top> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "D:/Acorn/Atom/FPGA/subatomic/src/Atomic_top.vhd" line 325: Unconnected output port 'CLK0_OUT1' of component 'dcm1'.
+WARNING:Xst:753 - "D:/Acorn/Atom/FPGA/subatomic/src/Atomic_top.vhd" line 325: Unconnected output port 'CLK2X_OUT' of component 'dcm1'.
+WARNING:Xst:753 - "D:/Acorn/Atom/FPGA/subatomic/src/Atomic_top.vhd" line 333: Unconnected output port 'CLK0_OUT1' of component 'dcm2'.
+WARNING:Xst:753 - "D:/Acorn/Atom/FPGA/subatomic/src/Atomic_top.vhd" line 333: Unconnected output port 'CLK2X_OUT' of component 'dcm2'.
+WARNING:Xst:753 - "D:/Acorn/Atom/FPGA/subatomic/src/Atomic_top.vhd" line 341: Unconnected output port 'Sync' of component 't65'.
+WARNING:Xst:753 - "D:/Acorn/Atom/FPGA/subatomic/src/Atomic_top.vhd" line 356: Unconnected output port 'cvbs' of component 'mc6847'.
+WARNING:Xst:819 - "D:/Acorn/Atom/FPGA/subatomic/src/Atomic_top.vhd" line 593: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <clken_counter>
+Entity <Atomic_top> analyzed. Unit <Atomic_top> generated.
+
+Analyzing Entity <dcm1> in library <work> (Architecture <behavioral>).
+    Set user-defined property "CLKDV_DIVIDE =  4.0000000000000000" for instance <DCM_INST> in unit <dcm1>.
+    Set user-defined property "CLKFX_DIVIDE =  21" for instance <DCM_INST> in unit <dcm1>.
+    Set user-defined property "CLKFX_MULTIPLY =  12" for instance <DCM_INST> in unit <dcm1>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <DCM_INST> in unit <dcm1>.
+    Set user-defined property "CLKIN_PERIOD =  40.0000000000000000" for instance <DCM_INST> in unit <dcm1>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <DCM_INST> in unit <dcm1>.
+    Set user-defined property "CLK_FEEDBACK =  NONE" for instance <DCM_INST> in unit <dcm1>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <DCM_INST> in unit <dcm1>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  LOW" for instance <DCM_INST> in unit <dcm1>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <DCM_INST> in unit <dcm1>.
+    Set user-defined property "DSS_MODE =  NONE" for instance <DCM_INST> in unit <dcm1>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <DCM_INST> in unit <dcm1>.
+    Set user-defined property "FACTORY_JF =  C080" for instance <DCM_INST> in unit <dcm1>.
+    Set user-defined property "PHASE_SHIFT =  0" for instance <DCM_INST> in unit <dcm1>.
+    Set user-defined property "SIM_MODE =  SAFE" for instance <DCM_INST> in unit <dcm1>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <DCM_INST> in unit <dcm1>.
+Entity <dcm1> analyzed. Unit <dcm1> generated.
+
+Analyzing Entity <dcm2> in library <work> (Architecture <behavioral>).
+    Set user-defined property "CLKDV_DIVIDE =  4.0000000000000000" for instance <DCM_INST> in unit <dcm2>.
+    Set user-defined property "CLKFX_DIVIDE =  25" for instance <DCM_INST> in unit <dcm2>.
+    Set user-defined property "CLKFX_MULTIPLY =  16" for instance <DCM_INST> in unit <dcm2>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <DCM_INST> in unit <dcm2>.
+    Set user-defined property "CLKIN_PERIOD =  37.5000000000000000" for instance <DCM_INST> in unit <dcm2>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <DCM_INST> in unit <dcm2>.
+    Set user-defined property "CLK_FEEDBACK =  NONE" for instance <DCM_INST> in unit <dcm2>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <DCM_INST> in unit <dcm2>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  LOW" for instance <DCM_INST> in unit <dcm2>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <DCM_INST> in unit <dcm2>.
+    Set user-defined property "DSS_MODE =  NONE" for instance <DCM_INST> in unit <dcm2>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <DCM_INST> in unit <dcm2>.
+    Set user-defined property "FACTORY_JF =  C080" for instance <DCM_INST> in unit <dcm2>.
+    Set user-defined property "PHASE_SHIFT =  0" for instance <DCM_INST> in unit <dcm2>.
+    Set user-defined property "SIM_MODE =  SAFE" for instance <DCM_INST> in unit <dcm2>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <DCM_INST> in unit <dcm2>.
+Entity <dcm2> analyzed. Unit <dcm2> generated.
+
+Analyzing Entity <t65> in library <work> (Architecture <rtl>).
+Entity <t65> analyzed. Unit <t65> generated.
+
+Analyzing Entity <T65_MCode> in library <work> (Architecture <rtl>).
+Entity <T65_MCode> analyzed. Unit <T65_MCode> generated.
+
+Analyzing Entity <T65_ALU> in library <work> (Architecture <rtl>).
+Entity <T65_ALU> analyzed. Unit <T65_ALU> generated.
+
+Analyzing generic Entity <mc6847> in library <work> (Architecture <syn>).
+	CVBS_NOT_VGA = false
+	T1_VARIANT = false
+    Set property "RAM_STYLE = BLOCK" for signal <VRAM>.
+WARNING:Xst:790 - "D:/Acorn/Atom/FPGA/subatomic/src/MC6847/mc6847.vhd" line 165: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "D:/Acorn/Atom/FPGA/subatomic/src/MC6847/mc6847.vhd" line 166: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "D:/Acorn/Atom/FPGA/subatomic/src/MC6847/mc6847.vhd" line 167: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:819 - "D:/Acorn/Atom/FPGA/subatomic/src/MC6847/mc6847.vhd" line 573: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <reset>, <vga_hsync>, <vga_vsync>, <vga_hborder>, <cvbs_vborder>
+Entity <mc6847> analyzed. Unit <mc6847> generated.
+
+Analyzing Entity <mc6847_ntsc> in library <work> (Architecture <RTL>).
+INFO:Xst:1561 - "D:/Acorn/Atom/FPGA/subatomic/src/MC6847/mc6847_ntsc.vhd" line 287: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/Acorn/Atom/FPGA/subatomic/src/MC6847/mc6847_ntsc.vhd" line 550: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/Acorn/Atom/FPGA/subatomic/src/MC6847/mc6847_ntsc.vhd" line 813: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "D:/Acorn/Atom/FPGA/subatomic/src/MC6847/mc6847_ntsc.vhd" line 1076: Mux is complete : default of case is discarded
+Entity <mc6847_ntsc> analyzed. Unit <mc6847_ntsc> generated.
+
+Analyzing Entity <SDROM> in library <work> (Architecture <rtl>).
+Entity <SDROM> analyzed. Unit <SDROM> generated.
+
+Analyzing Entity <atombasic> in library <work> (Architecture <rtl>).
+Entity <atombasic> analyzed. Unit <atombasic> generated.
+
+Analyzing Entity <atomfloat> in library <work> (Architecture <rtl>).
+Entity <atomfloat> analyzed. Unit <atomfloat> generated.
+
+Analyzing Entity <atomkernal> in library <work> (Architecture <rtl>).
+Entity <atomkernal> analyzed. Unit <atomkernal> generated.
+
+Analyzing Entity <SRAM0x8000> in library <work> (Architecture <behavioral>).
+    Set property "RAM_STYLE = BLOCK" for signal <RAM>.
+Entity <SRAM0x8000> analyzed. Unit <SRAM0x8000> generated.
+
+Analyzing Entity <I82C55> in library <work> (Architecture <rtl>).
+Entity <I82C55> analyzed. Unit <I82C55> generated.
+
+Analyzing Entity <keyboard> in library <work> (Architecture <rtl>).
+INFO:Xst:2679 - Register <keys<10>> in unit <keyboard> has a constant value of 11111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <keys<11>> in unit <keyboard> has a constant value of 11111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <keys<12>> in unit <keyboard> has a constant value of 11111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <keys<13>> in unit <keyboard> has a constant value of 11111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <keys<14>> in unit <keyboard> has a constant value of 11111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <keys<15>> in unit <keyboard> has a constant value of 11111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <keys<9><7>> in unit <keyboard> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <keys<9><6>> in unit <keyboard> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <keys<9><1>> in unit <keyboard> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <keys<8><7>> in unit <keyboard> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <keys<8><6>> in unit <keyboard> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <keys<8><1>> in unit <keyboard> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <keys<7><7>> in unit <keyboard> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <keys<7><6>> in unit <keyboard> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <keys<7><1>> in unit <keyboard> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <keys<6><7>> in unit <keyboard> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <keys<6><6>> in unit <keyboard> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <keys<5><7>> in unit <keyboard> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <keys<5><6>> in unit <keyboard> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <keys<4><7>> in unit <keyboard> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <keys<4><6>> in unit <keyboard> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <keys<3><7>> in unit <keyboard> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <keys<3><6>> in unit <keyboard> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <keys<2><7>> in unit <keyboard> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <keys<2><6>> in unit <keyboard> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <keys<1><7>> in unit <keyboard> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <keys<1><6>> in unit <keyboard> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <keys<1><0>> in unit <keyboard> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <keys<0><7>> in unit <keyboard> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <keys<0><6>> in unit <keyboard> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <keys<0><0>> in unit <keyboard> has a constant value of 1 during circuit operation. The register is replaced by logic.
+Entity <keyboard> analyzed. Unit <keyboard> generated.
+
+Analyzing generic Entity <ps2_intf> in library <work> (Architecture <ps2_intf_arch>).
+	filter_length = 8
+Entity <ps2_intf> analyzed. Unit <ps2_intf> generated.
+
+Analyzing Entity <M6522> in library <work> (Architecture <rtl>).
+WARNING:Xst:819 - "D:/Acorn/Atom/FPGA/subatomic/src/MC6522/m6522.vhd" line 175: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <CLK>
+WARNING:Xst:819 - "D:/Acorn/Atom/FPGA/subatomic/src/MC6522/m6522.vhd" line 167: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <RESET_L>
+Entity <M6522> analyzed. Unit <M6522> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <SDROM>.
+    Related source file is "D:/Acorn/Atom/FPGA/subatomic/src/ROM/SDROM22ROM.vhd".
+    Found 4096x8-bit ROM for signal <DATA$mux0001> created at line 30.
+    Found 8-bit register for signal <DATA>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <SDROM> synthesized.
+
+
+Synthesizing Unit <atombasic>.
+    Related source file is "D:/Acorn/Atom/FPGA/subatomic/src/ROM/basic.vhd".
+    Found 4096x8-bit ROM for signal <DATA$mux0001> created at line 29.
+    Found 8-bit register for signal <DATA>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <atombasic> synthesized.
+
+
+Synthesizing Unit <atomfloat>.
+    Related source file is "D:/Acorn/Atom/FPGA/subatomic/src/ROM/float.vhd".
+    Found 4096x8-bit ROM for signal <DATA$mux0001> created at line 29.
+    Found 8-bit register for signal <DATA>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <atomfloat> synthesized.
+
+
+Synthesizing Unit <atomkernal>.
+    Related source file is "D:/Acorn/Atom/FPGA/subatomic/src/ROM/kernel.vhd".
+    Found 4096x8-bit ROM for signal <DATA$mux0001> created at line 29.
+    Found 8-bit register for signal <DATA>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <atomkernal> synthesized.
+
+
+Synthesizing Unit <SRAM0x8000>.
+    Related source file is "D:/Acorn/Atom/FPGA/subatomic/src/RAM/RAM0x8000.vhd".
+    Found 8192x8-bit dual-port RAM <Mram_RAM> for signal <RAM>.
+    Found 8-bit register for signal <Q_vid>.
+    Found 8-bit register for signal <Q_uP>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  16 D-type flip-flop(s).
+Unit <SRAM0x8000> synthesized.
+
+
+Synthesizing Unit <I82C55>.
+    Related source file is "D:/Acorn/Atom/FPGA/subatomic/src/i82C55/i82c55.vhd".
+WARNING:Xst:647 - Input <ENA> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <O_DATA>.
+    Found 8-bit register for signal <O_PA>.
+    Found 4-bit register for signal <O_PC>.
+    Found 8-bit register for signal <ctrl_reg>.
+    Found 4-bit register for signal <h_portc>.
+    Found 4-bit register for signal <l_portc>.
+    Found 8-bit 4-to-1 multiplexer for signal <O_DATA$mux0001> created at line 66.
+    Found 8-bit register for signal <r_porta>.
+    Found 8-bit register for signal <r_portb>.
+    Summary:
+	inferred  52 D-type flip-flop(s).
+	inferred   8 Multiplexer(s).
+Unit <I82C55> synthesized.
+
+
+Synthesizing Unit <M6522>.
+    Related source file is "D:/Acorn/Atom/FPGA/subatomic/src/MC6522/m6522.vhd".
+WARNING:Xst:1780 - Signal <t2div16> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <t2_reload_counter<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <p2_h_t1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <clear_irq<7>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Register <t2_w_reset_int<0>> equivalent to <t2_load_counter<0>> has been removed
+    Found 8x5-bit ROM for signal <r_acr_4_2$rom0000>.
+    Found 16x5-bit ROM for signal <I_RS$rom0000>.
+    Found 1-bit register for signal <O_CB2>.
+    Found 8-bit register for signal <O_DATA>.
+    Found 1-bit register for signal <O_CA2>.
+    Found 1-bit register for signal <ca1_ip_reg>.
+    Found 1-bit register for signal <ca1_irq>.
+    Found 1-bit register for signal <ca2_ip_reg>.
+    Found 1-bit register for signal <ca2_irq>.
+    Found 1-bit register for signal <ca_hs_pulse>.
+    Found 1-bit register for signal <ca_hs_sr>.
+    Found 1-bit register for signal <cb1_ip_reg>.
+    Found 1-bit register for signal <cb1_irq>.
+    Found 1-bit register for signal <cb2_ip_reg>.
+    Found 1-bit register for signal <cb2_irq>.
+    Found 1-bit register for signal <cb_hs_pulse>.
+    Found 1-bit register for signal <cb_hs_sr>.
+    Found 1-bit register for signal <final_irq>.
+    Found 1-bit register for signal <ier_write_ena<0>>.
+    Found 1-bit register for signal <ifr_write_ena<0>>.
+    Found 8-bit register for signal <load_data>.
+    Found 1-bit 8-to-1 multiplexer for signal <O_CA2$mux0001> created at line 325.
+    Found 8-bit 16-to-1 multiplexer for signal <O_DATA$mux0001> created at line 224.
+    Found 2-bit register for signal <phase>.
+    Found 8-bit register for signal <r_acr>.
+    Found 8-bit register for signal <r_ddra>.
+    Found 8-bit register for signal <r_ddrb>.
+    Found 7-bit register for signal <r_ier>.
+    Found 8-bit register for signal <r_ira>.
+    Found 1-bit register for signal <r_ira_hs>.
+    Found 8-bit register for signal <r_irb>.
+    Found 1-bit register for signal <r_irb_hs>.
+    Found 8-bit register for signal <r_ora>.
+    Found 8-bit register for signal <r_orb>.
+    Found 8-bit register for signal <r_pcr>.
+    Found 8-bit register for signal <r_sr>.
+    Found 8-bit register for signal <r_t1l_h>.
+    Found 8-bit register for signal <r_t1l_l>.
+    Found 8-bit register for signal <r_t2l_h>.
+    Found 8-bit register for signal <r_t2l_l>.
+    Found 1-bit register for signal <sr_cb1_oe_l>.
+    Found 1-bit register for signal <sr_cb1_out>.
+    Found 4-bit up counter for signal <sr_cnt>.
+    Found 1-bit register for signal <sr_drive_cb2>.
+    Found 1-bit register for signal <sr_irq>.
+    Found 1-bit register for signal <sr_off_delay>.
+    Found 1-bit register for signal <sr_out>.
+    Found 1-bit register for signal <sr_read_ena<0>>.
+    Found 1-bit register for signal <sr_strobe>.
+    Found 1-bit register for signal <sr_strobe_falling<0>>.
+    Found 1-bit register for signal <sr_strobe_rising<0>>.
+    Found 1-bit register for signal <sr_strobe_t1>.
+    Found 1-bit register for signal <sr_write_ena<0>>.
+    Found 1-bit register for signal <t1_irq>.
+    Found 1-bit register for signal <t1_load_counter<0>>.
+    Found 1-bit register for signal <t1_r_reset_int<0>>.
+    Found 1-bit register for signal <t1_toggle>.
+    Found 1-bit register for signal <t1_w_reset_int<0>>.
+    Found 16-bit register for signal <t1c>.
+    Found 16-bit adder for signal <t1c$add0000> created at line 481.
+    Found 1-bit register for signal <t1c_active<0>>.
+    Found 1-bit register for signal <t2_irq>.
+    Found 1-bit register for signal <t2_load_counter<0>>.
+    Found 1-bit register for signal <t2_pb6>.
+    Found 1-bit register for signal <t2_pb6_t1>.
+    Found 1-bit register for signal <t2_r_reset_int<0>>.
+    Found 1-bit register for signal <t2_sr_ena<0>>.
+    Found 16-bit register for signal <t2c>.
+    Found 16-bit adder for signal <t2c$add0000> created at line 544.
+    Found 1-bit register for signal <t2c_active<0>>.
+    Found 1-bit register for signal <w_ora_hs>.
+    Found 1-bit register for signal <w_orb_hs>.
+    Summary:
+	inferred   2 ROM(s).
+	inferred   1 Counter(s).
+	inferred 207 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   9 Multiplexer(s).
+Unit <M6522> synthesized.
+
+
+Synthesizing Unit <T65_MCode>.
+    Related source file is "D:/Acorn/Atom/FPGA/subatomic/src/T6502/T65_MCode.vhd".
+WARNING:Xst:647 - Input <P<5:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <Mode> is used but never assigned. This sourceless signal will be automatically connected to value 00.
+    Found 4x2-bit ROM for signal <$rom0000>.
+    Found 4x13-bit ROM for signal <$rom0001>.
+    Found 2-bit 32-to-1 multiplexer for signal <Jump>.
+    Found 4-bit 4-to-1 multiplexer for signal <ALU_Op>.
+    Found 1-bit 4-to-1 multiplexer for signal <ALU_Op_0$mux0003> created at line 950.
+    Found 1-bit 4-to-1 multiplexer for signal <ALU_Op_1$mux0003> created at line 950.
+    Found 1-bit 4-to-1 multiplexer for signal <ALU_Op_2$mux0002> created at line 950.
+    Found 1-bit 8-to-1 multiplexer for signal <Branch>.
+    Found 2-bit 8-to-1 multiplexer for signal <Jump$mux0008> created at line 147.
+    Found 2-bit 8-to-1 multiplexer for signal <Jump$mux0013> created at line 147.
+    Found 2-bit 8-to-1 multiplexer for signal <Jump$mux0014> created at line 147.
+    Found 2-bit 8-to-1 multiplexer for signal <Jump$mux0015> created at line 147.
+    Found 2-bit 8-to-1 multiplexer for signal <Jump$mux0016> created at line 147.
+    Found 1-bit 4-to-1 multiplexer for signal <LDDI$mux0007> created at line 147.
+    Found 3-bit 4-to-1 multiplexer for signal <Set_BusA_To$mux0005> created at line 151.
+    Found 3-bit 4-to-1 multiplexer for signal <Set_BusA_To$mux0006> created at line 151.
+    Found 3-bit 4-to-1 multiplexer for signal <Set_BusA_To$mux0007> created at line 151.
+    Found 3-bit 4-to-1 multiplexer for signal <Set_BusA_To$mux0008> created at line 151.
+    Found 3-bit 4-to-1 multiplexer for signal <Set_BusA_To$mux0009> created at line 151.
+    Found 3-bit 4-to-1 multiplexer for signal <Set_BusA_To$mux0010> created at line 151.
+    Summary:
+	inferred   2 ROM(s).
+	inferred  39 Multiplexer(s).
+Unit <T65_MCode> synthesized.
+
+
+Synthesizing Unit <T65_ALU>.
+    Related source file is "D:/Acorn/Atom/FPGA/subatomic/src/T6502/T65_ALU.vhd".
+    Found 1-bit xor2 for signal <ADC_V$xor0000> created at line 60.
+    Found 7-bit adder for signal <AH$add0000> created at line 39.
+    Found 7-bit adder for signal <AH$add0001> created at line 57.
+    Found 6-bit subtractor for signal <AH0$sub0000> created at line 82.
+    Found 6-bit subtractor for signal <AH0$sub0001> created at line 103.
+    Found 5-bit subtractor for signal <AH0_5_1$sub0000> created at line 105.
+    Found 5-bit comparator greater for signal <AH_6$cmp_gt0000> created at line 66.
+    Found 6-bit adder for signal <AH_6_1$add0000> created at line 67.
+    Found 7-bit adder for signal <AL$add0000> created at line 38.
+    Found 7-bit subtractor for signal <AL0$sub0000> created at line 81.
+    Found 5-bit subtractor for signal <AL0_5_1$sub0000> created at line 101.
+    Found 5-bit comparator greater for signal <AL_6$cmp_gt0000> created at line 52.
+    Found 6-bit adder for signal <AL_6_1$add0000> created at line 53.
+    Found 8-bit addsub for signal <Q_t$addsub0000>.
+    Found 8-bit xor2 for signal <Q_t$xor0000> created at line 130.
+    Found 1-bit xor2 for signal <SBC_V$xor0000> created at line 96.
+    Found 1-bit xor2 for signal <SBC_V$xor0001> created at line 96.
+    Summary:
+	inferred  11 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <T65_ALU> synthesized.
+
+
+Synthesizing Unit <mc6847_ntsc>.
+    Related source file is "D:/Acorn/Atom/FPGA/subatomic/src/MC6847/mc6847_ntsc.vhd".
+WARNING:Xst:647 - Input <ADDR<10>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 256x32-bit ROM for signal <rom_addr_7_0$rom0000>.
+    Found 8-bit register for signal <DATA>.
+    Found 8-bit 4-to-1 multiplexer for signal <DATA$mux0008>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   8 Multiplexer(s).
+Unit <mc6847_ntsc> synthesized.
+
+
+Synthesizing Unit <ps2_intf>.
+    Related source file is "D:/Acorn/Atom/FPGA/subatomic/src/ps2kybrd/ps2_intf.vhd".
+    Found 1-bit register for signal <ERROR>.
+    Found 1-bit register for signal <VALID>.
+    Found 8-bit register for signal <DATA>.
+    Found 4-bit register for signal <bit_count>.
+    Found 4-bit adder for signal <bit_count$addsub0000> created at line 96.
+    Found 4-bit comparator less for signal <bit_count$cmp_lt0000> created at line 94.
+    Found 1-bit register for signal <clk_edge>.
+    Found 8-bit register for signal <clk_filter>.
+    Found 1-bit register for signal <parity>.
+    Found 1-bit xor2 for signal <parity$xor0000> created at line 98.
+    Found 1-bit register for signal <ps2_clk_in>.
+    Found 1-bit register for signal <ps2_dat_in>.
+    Found 9-bit register for signal <shiftreg>.
+    Found 4-bit comparator greatequal for signal <shiftreg$cmp_ge0000> created at line 94.
+    Summary:
+	inferred  35 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <ps2_intf> synthesized.
+
+
+Synthesizing Unit <dcm1>.
+    Related source file is "D:/Acorn/Atom/FPGA/subatomic/src/DCM/DCM ATOM.vhd".
+WARNING:Xst:1305 - Output <CLK0_OUT1> is never assigned. Tied to value 0.
+WARNING:Xst:1305 - Output <CLK2X_OUT> is never assigned. Tied to value 0.
+WARNING:Xst:1780 - Signal <CLKIN_IBUFG> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <dcm1> synthesized.
+
+
+Synthesizing Unit <dcm2>.
+    Related source file is "D:/Acorn/Atom/FPGA/subatomic/src/DCM/DCM ATOM2.vhd".
+WARNING:Xst:1305 - Output <CLK0_OUT1> is never assigned. Tied to value 0.
+WARNING:Xst:1305 - Output <CLK2X_OUT> is never assigned. Tied to value 0.
+WARNING:Xst:1780 - Signal <CLKIN_IBUFG> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <dcm2> synthesized.
+
+
+Synthesizing Unit <t65>.
+    Related source file is "D:/Acorn/Atom/FPGA/subatomic/src/T6502/T65.vhd".
+WARNING:Xst:646 - Signal <P_Out<5>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 8-bit 8-to-1 multiplexer for signal <DO>.
+    Found 16-bit 4-to-1 multiplexer for signal <A>.
+    Found 9-bit adder for signal <$add0000> created at line 170.
+    Found 16-bit adder for signal <$add0001> created at line 180.
+    Found 9-bit subtractor for signal <$sub0000> created at line 173.
+    Found 8-bit register for signal <ABC>.
+    Found 8-bit register for signal <AD>.
+    Found 8-bit adder for signal <AD$addsub0000>.
+    Found 4-bit register for signal <ALU_Op_r>.
+    Found 8-bit register for signal <BAH>.
+    Found 8-bit adder for signal <BAH$addsub0000> created at line 341.
+    Found 9-bit register for signal <BAL>.
+    Found 9-bit adder for signal <BAL$add0000> created at line 334.
+    Found 9-bit adder for signal <BAL$add0001> created at line 337.
+    Found 8-bit 6-to-1 multiplexer for signal <BusA>.
+    Found 8-bit register for signal <BusA_r>.
+    Found 8-bit register for signal <BusB>.
+    Found 8-bit register for signal <DL>.
+    Found 8-bit register for signal <IR>.
+    Found 1-bit register for signal <IRQ_n_o>.
+    Found 1-bit register for signal <IRQCycle>.
+    Found 3-bit up counter for signal <MCycle>.
+    Found 3-bit comparator equal for signal <MCycle$cmp_eq0000> created at line 435.
+    Found 1-bit register for signal <NMI_n_o>.
+    Found 1-bit register for signal <NMIAct>.
+    Found 1-bit register for signal <NMICycle>.
+    Found 3-bit comparator not equal for signal <NMICycle$cmp_ne0000> created at line 435.
+    Found 8-bit register for signal <P>.
+    Found 16-bit register for signal <PC>.
+    Found 1-bit 4-to-1 multiplexer for signal <PC_0$mux0000> created at line 185.
+    Found 1-bit 4-to-1 multiplexer for signal <PC_1$mux0000> created at line 185.
+    Found 1-bit 4-to-1 multiplexer for signal <PC_10$mux0001> created at line 185.
+    Found 1-bit 4-to-1 multiplexer for signal <PC_11$mux0001> created at line 185.
+    Found 1-bit 4-to-1 multiplexer for signal <PC_12$mux0001> created at line 185.
+    Found 1-bit 4-to-1 multiplexer for signal <PC_13$mux0001> created at line 185.
+    Found 1-bit 4-to-1 multiplexer for signal <PC_14$mux0001> created at line 185.
+    Found 1-bit 4-to-1 multiplexer for signal <PC_15$mux0001> created at line 185.
+    Found 8-bit adder for signal <PC_15_8$add0000> created at line 195.
+    Found 8-bit subtractor for signal <PC_15_8$sub0000> created at line 197.
+    Found 1-bit 4-to-1 multiplexer for signal <PC_2$mux0000> created at line 185.
+    Found 1-bit 4-to-1 multiplexer for signal <PC_3$mux0000> created at line 185.
+    Found 1-bit 4-to-1 multiplexer for signal <PC_4$mux0000> created at line 185.
+    Found 1-bit 4-to-1 multiplexer for signal <PC_5$mux0000> created at line 185.
+    Found 1-bit 4-to-1 multiplexer for signal <PC_6$mux0000> created at line 185.
+    Found 1-bit 4-to-1 multiplexer for signal <PC_7$mux0000> created at line 185.
+    Found 1-bit 4-to-1 multiplexer for signal <PC_8$mux0001> created at line 185.
+    Found 1-bit 4-to-1 multiplexer for signal <PC_9$mux0001> created at line 185.
+    Found 9-bit adder for signal <PCAdder$addsub0000> created at line 208.
+    Found 1-bit register for signal <R_W_n_i>.
+    Found 1-bit register for signal <RstCycle>.
+    Found 9-bit register for signal <S>.
+    Found 2-bit register for signal <Set_Addr_To_r>.
+    Found 3-bit register for signal <Write_Data_r>.
+    Found 8-bit register for signal <X>.
+    Found 8-bit register for signal <Y>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred 126 D-type flip-flop(s).
+	inferred  10 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred  48 Multiplexer(s).
+Unit <t65> synthesized.
+
+
+Synthesizing Unit <mc6847>.
+    Related source file is "D:/Acorn/Atom/FPGA/subatomic/src/MC6847/mc6847.vhd".
+WARNING:Xst:647 - Input <artifact_set> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <artifact_phase> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <vga_vborder> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <p_out<7>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <lookup<5>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cvbs_hborder> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <cvbs_char_d_o> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+    Found 512x8-bit dual-port RAM <Mram_VRAM> for signal <VRAM>.
+    Register <p_out<1>> equivalent to <p_out<0>> has been removed
+    Register <p_out<2>> equivalent to <p_out<0>> has been removed
+    Register <p_out<3>> equivalent to <p_out<0>> has been removed
+    Register <p_out<4>> equivalent to <p_out<0>> has been removed
+    Register <p_out<5>> equivalent to <p_out<0>> has been removed
+    Register <p_out<6>> equivalent to <p_out<0>> has been removed
+    Found 8x7-bit ROM for signal <r0$rom0000>.
+    Found 8x6-bit ROM for signal <r1$rom0000>.
+    Found 13-bit register for signal <videoaddr>.
+    Found 8-bit register for signal <blue>.
+    Found 8-bit register for signal <green>.
+    Found 8-bit register for signal <red>.
+    Found 8-bit register for signal <active_h_count>.
+    Found 8-bit adder for signal <active_h_count$addsub0000> created at line 250.
+    Found 8-bit register for signal <active_h_count0>.
+    Found 9-bit adder for signal <active_h_count0$add0000> created at line 341.
+    Found 8-bit adder for signal <active_h_count0$addsub0000>.
+    Found 1-bit register for signal <active_h_start>.
+    Found 9-bit register for signal <active_v_count>.
+    Found 9-bit adder for signal <active_v_count$mux0001> created at line 321.
+    Found 1-bit register for signal <an_s_r>.
+    Found 8-bit register for signal <b>.
+    Found 11-bit register for signal <char_a>.
+    Found 3-bit register for signal <chroma>.
+    Found 4-bit register for signal <count>.
+    Found 4-bit adder for signal <count$add0000> created at line 501.
+    Found 1-bit register for signal <count0>.
+    Found 1-bit register for signal <cvbs_clk_ena>.
+    Found 1-bit register for signal <cvbs_hblank>.
+    Found 1-bit register for signal <cvbs_hblank_r>.
+    Found 1-bit register for signal <cvbs_hsync>.
+    Found 9-bit register for signal <cvbs_linebuf_addr>.
+    Found 9-bit register for signal <cvbs_linebuf_addr_r>.
+    Found 9-bit register for signal <cvbs_linebuf_addr_rr>.
+    Found 1-bit register for signal <cvbs_linebuf_we_r>.
+    Found 1-bit register for signal <cvbs_linebuf_we_rr>.
+    Found 1-bit register for signal <cvbs_vblank>.
+    Found 1-bit register for signal <cvbs_vborder>.
+    Found 1-bit register for signal <cvbs_vsync>.
+    Found 5-bit register for signal <da0_int>.
+    Found 5-bit adder for signal <da0_int$addsub0000> created at line 374.
+    Found 8-bit register for signal <dd_r>.
+    Found 5-bit comparator less for signal <dd_r$cmp_lt0000> created at line 433.
+    Found 5-bit comparator less for signal <dd_r$cmp_lt0001> created at line 441.
+    Found 5-bit comparator less for signal <dd_r$cmp_lt0002> created at line 442.
+    Found 8-bit register for signal <g>.
+    Found 9-bit register for signal <h_count>.
+    Found 9-bit adder for signal <h_count$addsub0000> created at line 232.
+    Found 9-bit up counter for signal <h_count0>.
+    Found 1-bit register for signal <inv_r>.
+    Found 5-bit register for signal <lookup<4:0>>.
+    Found 4-bit adder for signal <lookup_3_0$add0000> created at line 390.
+    Found 5-bit adder for signal <lookup_4_0$add0000> created at line 386.
+    Found 8-bit register for signal <p_in>.
+    Found 1-bit register for signal <p_out<0>>.
+    Found 8-bit register for signal <pixel_char_d_o>.
+    Found 8-bit register for signal <r>.
+    Found 4-bit register for signal <row_v>.
+    Found 4-bit adder for signal <row_v$addsub0000> created at line 329.
+    Found 1-bit register for signal <toggle>.
+    Found 8-bit up counter for signal <tripletaddr>.
+    Found 4-bit register for signal <tripletcnt>.
+    Found 4-bit adder for signal <tripletcnt$addsub0000> created at line 337.
+    Found 9-bit register for signal <v_count>.
+    Found 9-bit adder for signal <v_count$addsub0000> created at line 297.
+    Found 8-bit register for signal <vga_char_d_o>.
+    Found 1-bit register for signal <vga_clk_ena>.
+    Found 1-bit register for signal <vga_hblank>.
+    Found 1-bit register for signal <vga_hborder>.
+    Found 1-bit register for signal <vga_hsync>.
+    Found 9-bit register for signal <vga_linebuf_addr>.
+    Found 1-bit register for signal <vga_vblank>.
+    Found 1-bit register for signal <vga_vblank_r>.
+    Found 1-bit register for signal <vga_vsync>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 ROM(s).
+	inferred   2 Counter(s).
+	inferred 221 D-type flip-flop(s).
+	inferred  12 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
+Unit <mc6847> synthesized.
+
+
+Synthesizing Unit <keyboard>.
+    Related source file is "D:/Acorn/Atom/FPGA/subatomic/src/ps2kybrd/keyboard.vhd".
+WARNING:Xst:647 - Input <CLKEN_1MHZ> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <keyb_error> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <key_data<7:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <extended> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <col> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <REPEAT_OUT>.
+    Found 1-bit register for signal <BREAK_OUT>.
+    Found 1-bit register for signal <TURBO>.
+    Found 1-bit register for signal <CTRL_OUT>.
+    Found 1-bit register for signal <SHIFT_OUT>.
+    Found 8-bit 16-to-1 multiplexer for signal <key_data>.
+    Found 1-bit register for signal <release>.
+    Summary:
+	inferred  61 D-type flip-flop(s).
+	inferred   8 Multiplexer(s).
+Unit <keyboard> synthesized.
+
+
+Synthesizing Unit <Atomic_top>.
+    Related source file is "D:/Acorn/Atom/FPGA/subatomic/src/Atomic_top.vhd".
+WARNING:Xst:1780 - Signal <video_address_t> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <via1_clken> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <vdg_vblank> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <vdg_red<6:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <vdg_hs_n> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <vdg_hblank> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <vdg_green<6:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <vdg_da0> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <vdg_blue<6:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <mc6847_enable> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <mc6522_portb<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <i8255_rd> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <i8255_pc_idata<3:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <i8255_pc_data<7:4>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <i8255_pb_data> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <dcm14m38> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cpu_cycle> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 16x6-bit ROM for signal <cpu_addr_15_12$rom0000>.
+    Found 4x1-bit ROM for signal <econet_enable$mux0002> created at line 545.
+    Found 16-bit tristate buffer for signal <$mux0000>.
+    Found 4-bit up counter for signal <clken_counter>.
+    Found 1-bit 16-to-1 multiplexer for signal <econet_enable>.
+    Found 1-bit 16-to-1 multiplexer for signal <i8255_enable>.
+    Found 1-bit 16-to-1 multiplexer for signal <mc6522_enable>.
+    Summary:
+	inferred   2 ROM(s).
+	inferred   1 Counter(s).
+	inferred   3 Multiplexer(s).
+	inferred  16 Tristate(s).
+Unit <Atomic_top> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 512x8-bit dual-port RAM                               : 1
+ 8192x8-bit dual-port RAM                              : 1
+# ROMs                                                 : 13
+ 16x5-bit ROM                                          : 1
+ 16x6-bit ROM                                          : 1
+ 256x32-bit ROM                                        : 1
+ 4096x8-bit ROM                                        : 4
+ 4x1-bit ROM                                           : 1
+ 4x13-bit ROM                                          : 1
+ 4x2-bit ROM                                           : 1
+ 8x5-bit ROM                                           : 1
+ 8x6-bit ROM                                           : 1
+ 8x7-bit ROM                                           : 1
+# Adders/Subtractors                                   : 36
+ 16-bit adder                                          : 3
+ 4-bit adder                                           : 5
+ 5-bit adder                                           : 2
+ 5-bit subtractor                                      : 2
+ 6-bit adder                                           : 2
+ 6-bit subtractor                                      : 2
+ 7-bit adder                                           : 3
+ 7-bit subtractor                                      : 1
+ 8-bit adder                                           : 5
+ 8-bit addsub                                          : 1
+ 8-bit subtractor                                      : 1
+ 9-bit adder                                           : 8
+ 9-bit subtractor                                      : 1
+# Counters                                             : 5
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 2
+ 8-bit up counter                                      : 1
+ 9-bit up counter                                      : 1
+# Registers                                            : 311
+ 1-bit register                                        : 240
+ 11-bit register                                       : 1
+ 13-bit register                                       : 1
+ 2-bit register                                        : 2
+ 3-bit register                                        : 2
+ 4-bit register                                        : 7
+ 5-bit register                                        : 1
+ 7-bit register                                        : 1
+ 8-bit register                                        : 48
+ 9-bit register                                        : 8
+# Comparators                                          : 9
+ 3-bit comparator equal                                : 1
+ 3-bit comparator not equal                            : 1
+ 4-bit comparator greatequal                           : 1
+ 4-bit comparator less                                 : 1
+ 5-bit comparator greater                              : 2
+ 5-bit comparator less                                 : 3
+# Multiplexers                                         : 48
+ 1-bit 16-to-1 multiplexer                             : 3
+ 1-bit 4-to-1 multiplexer                              : 24
+ 1-bit 8-to-1 multiplexer                              : 2
+ 16-bit 4-to-1 multiplexer                             : 1
+ 2-bit 32-to-1 multiplexer                             : 1
+ 2-bit 8-to-1 multiplexer                              : 5
+ 3-bit 4-to-1 multiplexer                              : 6
+ 8-bit 16-to-1 multiplexer                             : 2
+ 8-bit 4-to-1 multiplexer                              : 2
+ 8-bit 6-to-1 multiplexer                              : 1
+ 8-bit 8-to-1 multiplexer                              : 1
+# Tristates                                            : 1
+ 16-bit tristate buffer                                : 1
+# Xors                                                 : 5
+ 1-bit xor2                                            : 4
+ 8-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <vga_linebuf_addr_0> in Unit <VDG> is equivalent to the following FF/Latch, which will be removed : <active_h_count_0> 
+INFO:Xst:2261 - The FF/Latch <vga_linebuf_addr_1> in Unit <VDG> is equivalent to the following FF/Latch, which will be removed : <active_h_count_1> 
+INFO:Xst:2261 - The FF/Latch <vga_linebuf_addr_2> in Unit <VDG> is equivalent to the following FF/Latch, which will be removed : <active_h_count_2> 
+INFO:Xst:2261 - The FF/Latch <char_a_10> in Unit <VDG> is equivalent to the following FF/Latch, which will be removed : <pixel_char_d_o_7> 
+INFO:Xst:2261 - The FF/Latch <vga_linebuf_addr_3> in Unit <VDG> is equivalent to the following FF/Latch, which will be removed : <active_h_count_3> 
+INFO:Xst:2261 - The FF/Latch <vga_linebuf_addr_4> in Unit <VDG> is equivalent to the following FF/Latch, which will be removed : <active_h_count_4> 
+INFO:Xst:2261 - The FF/Latch <vga_linebuf_addr_5> in Unit <VDG> is equivalent to the following FF/Latch, which will be removed : <active_h_count_5> 
+INFO:Xst:2261 - The FF/Latch <vga_linebuf_addr_6> in Unit <VDG> is equivalent to the following FF/Latch, which will be removed : <active_h_count_6> 
+INFO:Xst:2261 - The FF/Latch <vga_linebuf_addr_7> in Unit <VDG> is equivalent to the following FF/Latch, which will be removed : <active_h_count_7> 
+INFO:Xst:2261 - The FF/Latch <b_0> in Unit <VDG> is equivalent to the following 17 FFs/Latches, which will be removed : <b_1> <b_2> <b_3> <b_4> <b_5> <g_0> <g_1> <g_2> <g_3> <g_4> <g_5> <r_0> <r_1> <r_2> <r_3> <r_4> <r_5> 
+INFO:Xst:2261 - The FF/Latch <chroma_0> in Unit <VDG> is equivalent to the following FF/Latch, which will be removed : <pixel_char_d_o_0> 
+INFO:Xst:2261 - The FF/Latch <chroma_1> in Unit <VDG> is equivalent to the following FF/Latch, which will be removed : <pixel_char_d_o_1> 
+INFO:Xst:2261 - The FF/Latch <chroma_2> in Unit <VDG> is equivalent to the following FF/Latch, which will be removed : <pixel_char_d_o_2> 
+WARNING:Xst:1710 - FF/Latch <NMIAct> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <vga_clk_ena> (without init value) has a constant value of 1 in block <VDG>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <char_a_10> (without init value) has a constant value of 0 in block <VDG>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NMICycle> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <blue_0> of sequential type is unconnected in block <VDG>.
+WARNING:Xst:2677 - Node <blue_1> of sequential type is unconnected in block <VDG>.
+WARNING:Xst:2677 - Node <blue_2> of sequential type is unconnected in block <VDG>.
+WARNING:Xst:2677 - Node <blue_3> of sequential type is unconnected in block <VDG>.
+WARNING:Xst:2677 - Node <blue_4> of sequential type is unconnected in block <VDG>.
+WARNING:Xst:2677 - Node <blue_5> of sequential type is unconnected in block <VDG>.
+WARNING:Xst:2677 - Node <blue_6> of sequential type is unconnected in block <VDG>.
+WARNING:Xst:2677 - Node <b_0> of sequential type is unconnected in block <VDG>.
+WARNING:Xst:2677 - Node <b_6> of sequential type is unconnected in block <VDG>.
+WARNING:Xst:2677 - Node <g_6> of sequential type is unconnected in block <VDG>.
+WARNING:Xst:2677 - Node <r_6> of sequential type is unconnected in block <VDG>.
+WARNING:Xst:2677 - Node <green_0> of sequential type is unconnected in block <VDG>.
+WARNING:Xst:2677 - Node <green_1> of sequential type is unconnected in block <VDG>.
+WARNING:Xst:2677 - Node <green_2> of sequential type is unconnected in block <VDG>.
+WARNING:Xst:2677 - Node <green_3> of sequential type is unconnected in block <VDG>.
+WARNING:Xst:2677 - Node <green_4> of sequential type is unconnected in block <VDG>.
+WARNING:Xst:2677 - Node <green_5> of sequential type is unconnected in block <VDG>.
+WARNING:Xst:2677 - Node <green_6> of sequential type is unconnected in block <VDG>.
+WARNING:Xst:2677 - Node <red_0> of sequential type is unconnected in block <VDG>.
+WARNING:Xst:2677 - Node <red_1> of sequential type is unconnected in block <VDG>.
+WARNING:Xst:2677 - Node <red_2> of sequential type is unconnected in block <VDG>.
+WARNING:Xst:2677 - Node <red_3> of sequential type is unconnected in block <VDG>.
+WARNING:Xst:2677 - Node <red_4> of sequential type is unconnected in block <VDG>.
+WARNING:Xst:2677 - Node <red_5> of sequential type is unconnected in block <VDG>.
+WARNING:Xst:2677 - Node <red_6> of sequential type is unconnected in block <VDG>.
+WARNING:Xst:2677 - Node <vga_char_d_o_4> of sequential type is unconnected in block <VDG>.
+WARNING:Xst:2677 - Node <vga_char_d_o_5> of sequential type is unconnected in block <VDG>.
+WARNING:Xst:2677 - Node <vga_char_d_o_6> of sequential type is unconnected in block <VDG>.
+WARNING:Xst:2677 - Node <vga_char_d_o_7> of sequential type is unconnected in block <VDG>.
+WARNING:Xst:2677 - Node <O_PC_0> of sequential type is unconnected in block <pia>.
+WARNING:Xst:2677 - Node <O_PC_1> of sequential type is unconnected in block <pia>.
+WARNING:Xst:2677 - Node <b_7> of sequential type is unconnected in block <VDG>.
+WARNING:Xst:2677 - Node <g_7> of sequential type is unconnected in block <VDG>.
+WARNING:Xst:2677 - Node <r_7> of sequential type is unconnected in block <VDG>.
+WARNING:Xst:2404 -  FFs/Latches <pixel_char_d_o<7:7>> (without init value) have a constant value of 0 in block <mc6847>.
+WARNING:Xst:2404 -  FFs/Latches <char_a<10:10>> (without init value) have a constant value of 0 in block <mc6847>.
+
+Synthesizing (advanced) Unit <Atomic_top>.
+INFO:Xst:3040 - The RAM <ram8000/Mram_RAM> will be implemented as a BLOCK RAM, absorbing the following register(s): <ram8000/Q_uP> <ram8000/Q_vid>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8192-word x 8-bit                   |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <cpu_Clk>       | rise     |
+    |     weA            | connected to signal <ram8000/_and0000> | high     |
+    |     addrA          | connected to signal <RamA>          |          |
+    |     diA            | connected to signal <cpu_dout>      |          |
+    |     doA            | connected to signal <ram_0x8000_data> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 8192-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <cpu_Clk>       | rise     |
+    |     addrB          | connected to signal <video_address> |          |
+    |     doB            | connected to signal <vdg_dd>        |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3044 - The ROM <VDG/charrom_inst/Mrom_rom_addr_7_0_rom0000> will be implemented as a read-only BLOCK RAM, absorbing the register: <VDG/char_a>.
+INFO:Xst:3039 - The RAM <VDG/charrom_inst/Mrom_rom_addr_7_0_rom0000> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 32-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk_14M38>     | rise     |
+    |     enA            | connected to signal <VDG/cvbs_linebuf_addr_rr_and0000> | high     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to internal node          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <Atomic_top> synthesized (advanced).
+
+Synthesizing (advanced) Unit <SDROM>.
+INFO:Xst:3044 - The ROM <Mrom_DATA_mux0001> will be implemented as a read-only BLOCK RAM, absorbing the register: <DATA>.
+INFO:Xst:3039 - The RAM <Mrom_DATA_mux0001> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4096-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <CLK>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <ADDR>          |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <DATA>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <SDROM> synthesized (advanced).
+
+Synthesizing (advanced) Unit <atombasic>.
+INFO:Xst:3044 - The ROM <Mrom_DATA_mux0001> will be implemented as a read-only BLOCK RAM, absorbing the register: <DATA>.
+INFO:Xst:3039 - The RAM <Mrom_DATA_mux0001> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4096-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <CLK>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <ADDR>          |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <DATA>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <atombasic> synthesized (advanced).
+
+Synthesizing (advanced) Unit <atomfloat>.
+INFO:Xst:3044 - The ROM <Mrom_DATA_mux0001> will be implemented as a read-only BLOCK RAM, absorbing the register: <DATA>.
+INFO:Xst:3039 - The RAM <Mrom_DATA_mux0001> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4096-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <CLK>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <ADDR>          |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <DATA>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <atomfloat> synthesized (advanced).
+
+Synthesizing (advanced) Unit <atomkernal>.
+INFO:Xst:3044 - The ROM <Mrom_DATA_mux0001> will be implemented as a read-only BLOCK RAM, absorbing the register: <DATA>.
+INFO:Xst:3039 - The RAM <Mrom_DATA_mux0001> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4096-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <CLK>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <ADDR>          |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <DATA>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <atomkernal> synthesized (advanced).
+
+Synthesizing (advanced) Unit <mc6847>.
+INFO:Xst:3040 - The RAM <Mram_VRAM> will be implemented as a BLOCK RAM, absorbing the following register(s): <vga_char_d_o>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 512-word x 8-bit                    |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <cvbs_linebuf_we_rr_0> | high     |
+    |     addrA          | connected to signal <cvbs_linebuf_addr_rr> |          |
+    |     diA            | connected to signal <pixel_char_d_o> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 512-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <clk>           | rise     |
+    |     addrB          | connected to signal <vga_linebuf_addr> |          |
+    |     doB            | connected to signal <vga_char_d_o>  |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <mc6847> synthesized (advanced).
+
+Synthesizing (advanced) Unit <t65>.
+The following registers are absorbed into accumulator <AD>: 1 register on signal <AD>.
+Unit <t65> synthesized (advanced).
+WARNING:Xst:2677 - Node <VDG/red_0> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/red_1> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/red_2> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/red_3> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/red_4> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/red_5> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/red_6> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/green_0> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/green_1> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/green_2> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/green_3> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/green_4> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/green_5> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/green_6> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/r_0> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/r_1> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/r_2> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/r_3> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/r_4> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/r_5> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/r_6> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/g_0> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/g_1> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/g_2> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/g_3> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/g_4> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/g_5> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/g_6> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/b_0> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/b_1> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/b_2> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/b_3> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/b_4> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/b_5> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/b_6> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/blue_0> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/blue_1> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/blue_2> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/blue_3> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/blue_4> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/blue_5> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/blue_6> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/char_a_0> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/char_a_1> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/char_a_2> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/char_a_3> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/char_a_4> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/char_a_5> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/char_a_6> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/char_a_7> of sequential type is unconnected in block <Atomic_top>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 7
+ 256x32-bit single-port block RAM                      : 1
+ 4096x8-bit single-port block RAM                      : 4
+ 512x8-bit dual-port block RAM                         : 1
+ 8192x8-bit dual-port block RAM                        : 1
+# ROMs                                                 : 7
+ 16x5-bit ROM                                          : 1
+ 16x6-bit ROM                                          : 1
+ 4x1-bit ROM                                           : 1
+ 4x13-bit ROM                                          : 1
+ 4x2-bit ROM                                           : 1
+ 8x5-bit ROM                                           : 1
+ 8x6-bit ROM                                           : 1
+# Adders/Subtractors                                   : 34
+ 16-bit adder                                          : 3
+ 4-bit adder                                           : 5
+ 4-bit subtractor                                      : 2
+ 5-bit adder                                           : 2
+ 6-bit adder                                           : 2
+ 6-bit subtractor                                      : 2
+ 7-bit adder                                           : 2
+ 7-bit subtractor                                      : 1
+ 8-bit adder                                           : 4
+ 8-bit addsub                                          : 1
+ 8-bit subtractor                                      : 1
+ 9-bit adder                                           : 8
+ 9-bit subtractor                                      : 1
+# Counters                                             : 5
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 2
+ 8-bit up counter                                      : 1
+ 9-bit up counter                                      : 1
+# Accumulators                                         : 1
+ 8-bit up loadable accumulator                         : 1
+# Registers                                            : 637
+ Flip-Flops                                            : 637
+# Comparators                                          : 9
+ 3-bit comparator equal                                : 1
+ 3-bit comparator not equal                            : 1
+ 4-bit comparator greatequal                           : 1
+ 4-bit comparator less                                 : 1
+ 5-bit comparator greater                              : 2
+ 5-bit comparator less                                 : 3
+# Multiplexers                                         : 91
+ 1-bit 16-to-1 multiplexer                             : 11
+ 1-bit 4-to-1 multiplexer                              : 48
+ 1-bit 6-to-1 multiplexer                              : 8
+ 1-bit 8-to-1 multiplexer                              : 10
+ 2-bit 32-to-1 multiplexer                             : 1
+ 2-bit 8-to-1 multiplexer                              : 5
+ 3-bit 4-to-1 multiplexer                              : 6
+ 8-bit 16-to-1 multiplexer                             : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 5
+ 1-bit xor2                                            : 4
+ 8-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <NMIAct> (without init value) has a constant value of 0 in block <t65>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NMICycle> (without init value) has a constant value of 0 in block <t65>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <VDG/vga_clk_ena> (without init value) has a constant value of 1 in block <Atomic_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <VDG/r_7> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/g_7> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <VDG/b_7> of sequential type is unconnected in block <Atomic_top>.
+INFO:Xst:2261 - The FF/Latch <VDG/chroma_0> in Unit <Atomic_top> is equivalent to the following FF/Latch, which will be removed : <VDG/pixel_char_d_o_0> 
+INFO:Xst:2261 - The FF/Latch <VDG/chroma_1> in Unit <Atomic_top> is equivalent to the following FF/Latch, which will be removed : <VDG/pixel_char_d_o_1> 
+INFO:Xst:2261 - The FF/Latch <VDG/chroma_2> in Unit <Atomic_top> is equivalent to the following FF/Latch, which will be removed : <VDG/pixel_char_d_o_2> 
+INFO:Xst:2261 - The FF/Latch <VDG/active_h_count_0> in Unit <Atomic_top> is equivalent to the following FF/Latch, which will be removed : <VDG/vga_linebuf_addr_0> 
+INFO:Xst:2261 - The FF/Latch <VDG/active_h_count_1> in Unit <Atomic_top> is equivalent to the following FF/Latch, which will be removed : <VDG/vga_linebuf_addr_1> 
+INFO:Xst:2261 - The FF/Latch <VDG/active_h_count_2> in Unit <Atomic_top> is equivalent to the following FF/Latch, which will be removed : <VDG/vga_linebuf_addr_2> 
+INFO:Xst:2261 - The FF/Latch <VDG/active_h_count_3> in Unit <Atomic_top> is equivalent to the following FF/Latch, which will be removed : <VDG/vga_linebuf_addr_3> 
+INFO:Xst:2261 - The FF/Latch <VDG/active_h_count_4> in Unit <Atomic_top> is equivalent to the following FF/Latch, which will be removed : <VDG/vga_linebuf_addr_4> 
+INFO:Xst:2261 - The FF/Latch <VDG/active_h_count_5> in Unit <Atomic_top> is equivalent to the following FF/Latch, which will be removed : <VDG/vga_linebuf_addr_5> 
+INFO:Xst:2261 - The FF/Latch <VDG/active_h_count_6> in Unit <Atomic_top> is equivalent to the following FF/Latch, which will be removed : <VDG/vga_linebuf_addr_6> 
+INFO:Xst:2261 - The FF/Latch <VDG/active_h_count_7> in Unit <Atomic_top> is equivalent to the following FF/Latch, which will be removed : <VDG/vga_linebuf_addr_7> 
+INFO:Xst:2261 - The FF/Latch <h_portc_0> in Unit <I82C55> is equivalent to the following FF/Latch, which will be removed : <h_portc_1> 
+WARNING:Xst:2677 - Node <S_8> of sequential type is unconnected in block <t65>.
+
+Optimizing unit <Atomic_top> ...
+
+Optimizing unit <I82C55> ...
+
+Optimizing unit <M6522> ...
+
+Optimizing unit <T65_MCode> ...
+
+Optimizing unit <T65_ALU> ...
+
+Optimizing unit <ps2_intf> ...
+
+Optimizing unit <t65> ...
+
+Optimizing unit <keyboard> ...
+WARNING:Xst:2677 - Node <pia/O_PC_1> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <pia/O_PC_0> of sequential type is unconnected in block <Atomic_top>.
+WARNING:Xst:2677 - Node <input/ps2/ERROR> of sequential type is unconnected in block <Atomic_top>.
+
+Mapping all equations...
+WARNING:Xst:2677 - Node <via/sr_cb1_oe_l> of sequential type is unconnected in block <Atomic_top>.
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Atomic_top, actual ratio is 61.
+FlipFlop pia/O_PA_4 has been replicated 1 time(s)
+FlipFlop pia/O_PA_5 has been replicated 1 time(s)
+FlipFlop pia/O_PA_6 has been replicated 1 time(s)
+FlipFlop pia/O_PA_7 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <Atomic_top> :
+	Found 3-bit shift register for signal <VDG/cvbs_linebuf_addr_rr_0>.
+	Found 3-bit shift register for signal <VDG/cvbs_linebuf_addr_rr_1>.
+	Found 3-bit shift register for signal <VDG/cvbs_linebuf_addr_rr_2>.
+	Found 3-bit shift register for signal <VDG/cvbs_linebuf_addr_rr_3>.
+	Found 3-bit shift register for signal <VDG/cvbs_linebuf_addr_rr_4>.
+	Found 3-bit shift register for signal <VDG/cvbs_linebuf_addr_rr_5>.
+	Found 3-bit shift register for signal <VDG/cvbs_linebuf_addr_rr_6>.
+	Found 3-bit shift register for signal <VDG/cvbs_linebuf_addr_rr_7>.
+	Found 2-bit shift register for signal <VDG/cvbs_linebuf_addr_rr_8>.
+Unit <Atomic_top> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 628
+ Flip-Flops                                            : 628
+# Shift Registers                                      : 9
+ 2-bit shift register                                  : 1
+ 3-bit shift register                                  : 8
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Atomic_top.ngr
+Top Level Output File Name         : Atomic_top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 56
+
+Cell Usage :
+# BELS                             : 2504
+#      GND                         : 1
+#      INV                         : 29
+#      LUT1                        : 108
+#      LUT2                        : 125
+#      LUT2_D                      : 3
+#      LUT2_L                      : 1
+#      LUT3                        : 594
+#      LUT3_D                      : 6
+#      LUT3_L                      : 1
+#      LUT4                        : 948
+#      LUT4_D                      : 6
+#      LUT4_L                      : 24
+#      MULT_AND                    : 7
+#      MUXCY                       : 167
+#      MUXF5                       : 265
+#      MUXF6                       : 31
+#      MUXF7                       : 8
+#      VCC                         : 1
+#      XORCY                       : 179
+# FlipFlops/Latches                : 637
+#      FD                          : 11
+#      FDC                         : 21
+#      FDCE                        : 283
+#      FDE                         : 206
+#      FDP                         : 11
+#      FDPE                        : 95
+#      FDR                         : 6
+#      FDRSE                       : 2
+#      FDSE                        : 2
+# RAMS                             : 14
+#      RAMB16BWE                   : 14
+# Shift Registers                  : 9
+#      SRL16E                      : 9
+# Clock Buffers                    : 2
+#      BUFG                        : 2
+# IO Buffers                       : 56
+#      IBUF                        : 4
+#      IBUFG                       : 1
+#      IOBUF                       : 8
+#      OBUF                        : 35
+#      OBUFT                       : 8
+# DCMs                             : 2
+#      DCM                         : 2
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200avq100-5 
+
+ Number of Slices:                      989  out of   1792    55%  
+ Number of Slice Flip Flops:            637  out of   3584    17%  
+ Number of 4 input LUTs:               1854  out of   3584    51%  
+    Number used as logic:              1845
+    Number used as Shift registers:       9
+ Number of IOs:                          56
+ Number of bonded IOBs:                  56  out of     68    82%  
+ Number of BRAMs:                        14  out of     16    87%  
+ Number of GCLKs:                         2  out of     24     8%  
+ Number of DCMs:                          2  out of      4    50%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk_25MHz                          | pll/DCM_INST:CLKFX     | 157   |
+clk_25MHz                          | pll2/DCM_INST:CLKFX    | 503   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------------+----------------------------+-------+
+Control Signal                                 | Buffer(FF name)            | Load  |
+-----------------------------------------------+----------------------------+-------+
+input/nRESET_inv(input/ps2/nRESET_inv1_INV_0:O)| NONE(input/BREAK_OUT)      | 217   |
+RSTn_inv(pia/RESET_inv1:O)                     | NONE(VDG/active_h_count0_0)| 193   |
+-----------------------------------------------+----------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 32.979ns (Maximum Frequency: 30.322MHz)
+   Minimum input arrival time before clock: 8.044ns
+   Maximum output required time after clock: 11.793ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_25MHz'
+  Clock period: 32.979ns (frequency: 30.322MHz)
+  Total number of paths / destination ports: 186813 / 1479
+-------------------------------------------------------------------------
+Delay:               6.184ns (Levels of Logic = 8)
+  Source:            pia/O_PA_4_1 (FF)
+  Destination:       VDG/videoaddr_9 (FF)
+  Source Clock:      clk_25MHz rising 0.6X
+  Destination Clock: clk_25MHz rising 0.6X
+
+  Data Path: pia/O_PA_4_1 to VDG/videoaddr_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.495   0.359  pia/O_PA_4_1 (pia/O_PA_4_1)
+     LUT4:I3->O            1   0.561   0.000  VDG/Madd_active_v_count_mux0001_lut<2> (VDG/Madd_active_v_count_mux0001_lut<2>)
+     MUXCY:S->O            1   0.523   0.000  VDG/Madd_active_v_count_mux0001_cy<2> (VDG/Madd_active_v_count_mux0001_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  VDG/Madd_active_v_count_mux0001_cy<3> (VDG/Madd_active_v_count_mux0001_cy<3>)
+     XORCY:CI->O           2   0.654   0.382  VDG/Madd_active_v_count_mux0001_xor<4> (VDG/active_v_count_mux0001<4>)
+     LUT4:I3->O            6   0.561   0.571  VDG/active_v_count_mux0002<4>1 (VDG/active_v_count_mux0002<4>)
+     LUT4:I3->O            1   0.561   0.465  VDG/videoaddr_mux0002<9>56_SW0 (N314)
+     LUT4:I0->O            1   0.561   0.000  VDG/videoaddr_mux0002<9>74_G (N340)
+     MUXF5:I1->O           1   0.229   0.000  VDG/videoaddr_mux0002<9>74 (VDG/videoaddr_mux0002<9>)
+     FDE:D                     0.197          VDG/videoaddr_9
+    ----------------------------------------
+    Total                      6.184ns (4.407ns logic, 1.777ns route)
+                                       (71.3% logic, 28.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_25MHz'
+  Total number of paths / destination ports: 314 / 243
+-------------------------------------------------------------------------
+Offset:              8.044ns (Levels of Logic = 15)
+  Source:            RamD<0> (PAD)
+  Destination:       cpu/BAL_7 (FF)
+  Destination Clock: clk_25MHz rising 0.6X
+
+  Data Path: RamD<0> to cpu/BAL_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IOBUF:IO->O           3   0.824   0.474  RamD_0_IOBUF (N288)
+     LUT4:I2->O            6   0.561   0.635  cpu_din<0>1184 (cpu_din<0>)
+     LUT3:I1->O            1   0.562   0.000  cpu/mux8_7 (cpu/mux8_7)
+     MUXF5:I0->O           2   0.229   0.488  cpu/mux8_5_f5 (cpu/mux8_5_f5)
+     LUT4:I0->O            1   0.561   0.000  cpu/Madd_BAL_add0001_lut<0> (cpu/Madd_BAL_add0001_lut<0>)
+     MUXCY:S->O            1   0.523   0.000  cpu/Madd_BAL_add0001_cy<0> (cpu/Madd_BAL_add0001_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  cpu/Madd_BAL_add0001_cy<1> (cpu/Madd_BAL_add0001_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  cpu/Madd_BAL_add0001_cy<2> (cpu/Madd_BAL_add0001_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  cpu/Madd_BAL_add0001_cy<3> (cpu/Madd_BAL_add0001_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  cpu/Madd_BAL_add0001_cy<4> (cpu/Madd_BAL_add0001_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  cpu/Madd_BAL_add0001_cy<5> (cpu/Madd_BAL_add0001_cy<5>)
+     MUXCY:CI->O           1   0.065   0.000  cpu/Madd_BAL_add0001_cy<6> (cpu/Madd_BAL_add0001_cy<6>)
+     XORCY:CI->O           1   0.654   0.359  cpu/Madd_BAL_add0001_xor<7> (cpu/BAL_add0001<7>)
+     LUT4:I3->O            1   0.561   0.465  cpu/BAL_7_mux000130 (cpu/BAL_7_mux000130)
+     LUT4:I0->O            1   0.561   0.000  cpu/BAL_7_mux000161 (cpu/BAL_7_mux0001)
+     FDCE:D                    0.197          cpu/BAL_7
+    ----------------------------------------
+    Total                      8.044ns (5.623ns logic, 2.421ns route)
+                                       (69.9% logic, 30.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_25MHz'
+  Total number of paths / destination ports: 529 / 50
+-------------------------------------------------------------------------
+Offset:              11.793ns (Levels of Logic = 6)
+  Source:            cpu/IR_0 (FF)
+  Destination:       RamA<0> (PAD)
+  Source Clock:      clk_25MHz rising 0.6X
+
+  Data Path: cpu/IR_0 to RamA<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            56   0.495   1.187  cpu/IR_0 (cpu/IR_0)
+     LUT2:I0->O           10   0.561   0.816  cpu/mcode/LDA42 (cpu/mcode/N47)
+     LUT4:I1->O           12   0.562   0.883  cpu/mcode/LCycle_cmp_eq00251 (cpu/mcode/LCycle_cmp_eq0025)
+     LUT4:I1->O            2   0.562   0.446  cpu/PCAdder<0>1 (cpu/PCAdder<0>)
+     LUT3:I1->O            1   0.562   0.000  cpu/mux16_4 (cpu/mux16_4)
+     MUXF5:I0->O         113   0.229   1.095  cpu/mux16_2_f5 (RamA_0_OBUF)
+     OBUF:I->O                 4.396          RamA_0_OBUF (RamA<0>)
+    ----------------------------------------
+    Total                     11.793ns (7.367ns logic, 4.426ns route)
+                                       (62.5% logic, 37.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 49.00 secs
+Total CPU time to Xst completion: 48.77 secs
+ 
+--> 
+
+Total memory usage is 402636 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  159 (   0 filtered)
+Number of infos    :   73 (   0 filtered)
+
